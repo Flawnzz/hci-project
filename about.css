@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: EldwinTrial;
+  src: url('font/Eldwin-Trial/Eldwin_OTF_Trial/EldwinTrial-ScriptHeavy.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #EFECE9;
+    color: #192524;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #3C5759;
+    color: #EFECE9;
+}
+
+header strong {
+    font-family: EldwinTrial, sans-serif;
+    font-size: 1.5em;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #959D90;
+}
+
+.visi-misi::after{
+    font-family: sans-serif;
+    display: flex;
+    background-color: #EFECE9;
+    height: auto;
+}
+
+
+
+
+.visi-misi h2{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.vision {
+    display: block;
+    width: 50% ;
+    background-color: #959D90;
+    text-align: right;
+    color: #EFECE9;
+    margin: 0px;
+    padding: 25vh 4rem 25vh 4rem;
+    float: left;
+    margin-bottom: 100px;
+}
+
+.mission{
+    display: block;
+    width: 50% ;
+    background-color: #D0D5CE;
+    color: #3C5759;
+    margin: 0px;
+    text-align: left;
+    padding: 25vh 4rem 25vh 4rem;
+    float: right;
+    margin-bottom: 100px;
+}
+
+.mission p, .vision p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.approach{
+    background-color: #D1EBDB;
+    padding: 25vh 15% 25vh 15%;
+    text-align: justify;
+    color: #192524;
+}
+
+.approach h2{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+footer {
+  background-color: #959D90;
+  color: #EFECE9;
+  padding: 3rem 5%;
+  text-align: center;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.footer-icon {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+   
+    .footer-info {
+        gap: 1.5rem;
+    }
+    .vision{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .mission{
+        width: 100%;
+        text-align: center;
+    }
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+   .footer-info {
+        gap: 1.5rem;
+    }
+    .vision{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .mission{
+        width: 100%;
+        text-align: center;
+    }
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
